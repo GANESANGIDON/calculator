@@ -132,7 +132,7 @@ sqrtBtn.addEventListener('click', () => {
 // cuberoot button
 cubrtBtn.addEventListener('click', () => {
   if (inputBox.value) {
-    inputBox.value = Math.pow(inputBox.value, 1 / 3)
+    inputBox.value = Math.cbrt(inputBox.value)
   }
 })
 
