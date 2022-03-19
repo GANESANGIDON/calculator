@@ -10,7 +10,7 @@
 :root{
   --smallFont: 600 12px arial, sans-serif;
   --mediumFont: 500 14px arial, sans-serif;
-  --bigFont: 600 26px arial, sans-serif;
+  --bigFont: 600 28px arial, sans-serif;
   --bodyBgColor: #e2e2e2;
   --calcBgColor: #dbdbdb;
   --btnBgColor: #d1d1d1;
@@ -71,7 +71,7 @@ body{
   justify-self: center;
   gap: 20px;
   border-radius: 5px;
-  padding: 30px 25px;
+  padding: 30px 25px 25px 25px;
   box-shadow: 0px 0px 4px var(--greyColor);
   background-color: var(--calcBgColor);
 }
@@ -90,7 +90,7 @@ body{
   height: 100%;
   font: var(--bigFont);
   color: #1a1a1a;
-  padding: 25px 5px 0px 5px;
+  padding: 40px 5px 0px 5px;
   border-radius: inherit;
   border: none;
   text-align: right;
@@ -102,8 +102,8 @@ body{
 #last-ans{
   width: 100%;
   position: absolute;
-  top: 5px; 
-  right: 0px;
+  top: 8px; 
+  right: 2px;
   text-align: right;
   padding: 1px 5px;
   color: #1a1a1a;
@@ -122,20 +122,20 @@ body{
   gap: 8px;
 }
 
-/* buttons */
-.btn{
-  background-color: var(--btnBgColor);
-  box-shadow: 0px 2px 3px var(--greyColor);
-}
-
 /* buttons and labels */
 .btn, .lbl{
-  padding: 5px 5px;
   font: var(--mediumFont);
   border-radius: 2px;
   border: none;
   cursor: pointer;
   transition: 0.2s;
+}
+
+/* buttons */
+.btn{
+  height: 26px;
+  background-color: var(--btnBgColor);
+  box-shadow: 0px 2px 3px var(--greyColor);
 }
 
 .btn:hover{
@@ -146,8 +146,13 @@ body{
   box-shadow: 0px 0px 4px var(--greyColor);
 }
 
+#dot, #sqrt, #cubrt{
+  font-weight: 550;
+}
+
 /* labels */
 .lbl{
+  line-height: 26px;
   text-align: center;
   background-color: var(--calcBgColor);
 }
@@ -190,4 +195,40 @@ footer a{
 
 footer a:hover{
   color: coral;
+}
+
+/* --------------------------------------------- */
+@media(min-width: 768px){
+
+  :root{
+    --smallFont: 600 14px arial, sans-serif;
+    --mediumFont: 500 16px arial, sans-serif;
+    --bigFont: 600 38px arial, sans-serif;
+  }
+  
+  #calculator{
+    width: 400px;
+    gap: 25px;
+    padding: 40px 35px 30px 35px;
+  }
+
+  #display-container{
+    height: 100px;
+  }
+
+  #display-screen{
+    padding: 55px 7px 0px 7px;
+  }
+
+  #btns-container{
+    gap: 12px 10px;
+  }
+
+  .btn{
+    height: 30px;
+  }
+
+  .lbl{
+    line-height: 30px;
+  }
 }
