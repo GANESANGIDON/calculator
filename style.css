@@ -70,7 +70,7 @@ body{
   flex-direction: column;
   justify-self: center;
   gap: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 30px 25px 25px 25px;
   box-shadow: 0px 0px 4px var(--greyColor);
   background-color: var(--calcBgColor);
